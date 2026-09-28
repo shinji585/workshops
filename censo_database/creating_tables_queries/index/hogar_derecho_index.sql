@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX ON "hogar_derecho" ("street", "number", "id_manzana");

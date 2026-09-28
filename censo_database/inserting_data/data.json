@@ -1,0 +1,658 @@
+{
+  "pais": [
+    {
+      "id": "10000000-0000-0000-0000-000000000001",
+      "name": "Colombia",
+      "code_iso": "CO"
+    },
+    {
+      "id": "10000000-0000-0000-0000-000000000002",
+      "name": "Estados Unidos",
+      "code_iso": "US"
+    },
+    {
+      "id": "10000000-0000-0000-0000-000000000003",
+      "name": "España",
+      "code_iso": "ES"
+    }
+  ],
+
+  "ciudad_extranjera": [
+    {
+      "id": "20000000-0000-0000-0000-000000000001",
+      "name": "Miami",
+      "state_province": "Florida",
+      "id_pais": "10000000-0000-0000-0000-000000000002"
+    },
+    {
+      "id": "20000000-0000-0000-0000-000000000002",
+      "name": "Madrid",
+      "state_province": "Comunidad de Madrid",
+      "id_pais": "10000000-0000-0000-0000-000000000003"
+    }
+  ],
+
+  "departamento": [
+    {
+      "id": "30000000-0000-0000-0000-000000000001",
+      "name": "Bolívar",
+      "code": "13"
+    },
+    {
+      "id": "30000000-0000-0000-0000-000000000002",
+      "name": "Atlántico",
+      "code": "08"
+    }
+  ],
+
+  "municipio": [
+    {
+      "id": "40000000-0000-0000-0000-000000000001",
+      "name": "Cartagena de Indias",
+      "code": "13001",
+      "id_departamento": "30000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "40000000-0000-0000-0000-000000000002",
+      "name": "Magangué",
+      "code": "13430",
+      "id_departamento": "30000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "40000000-0000-0000-0000-000000000003",
+      "name": "Barranquilla",
+      "code": "08001",
+      "id_departamento": "30000000-0000-0000-0000-000000000002"
+    }
+  ],
+
+  "distrito": [
+    {
+      "id": "50000000-0000-0000-0000-000000000001",
+      "name": "Distrito Centro",
+      "code": "D001",
+      "id_municipio": "40000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "50000000-0000-0000-0000-000000000002",
+      "name": "Distrito Norte",
+      "code": "D002",
+      "id_municipio": "40000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "50000000-0000-0000-0000-000000000003",
+      "name": "Distrito Central",
+      "code": "D001",
+      "id_municipio": "40000000-0000-0000-0000-000000000002"
+    },
+    {
+      "id": "50000000-0000-0000-0000-000000000004",
+      "name": "Distrito Norte",
+      "code": "D001",
+      "id_municipio": "40000000-0000-0000-0000-000000000003"
+    }
+  ],
+
+  "manzana": [
+    {
+      "id": "60000000-0000-0000-0000-000000000001",
+      "code": "0001",
+      "id_distrito": "50000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "60000000-0000-0000-0000-000000000002",
+      "code": "0002",
+      "id_distrito": "50000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "60000000-0000-0000-0000-000000000003",
+      "code": "0001",
+      "id_distrito": "50000000-0000-0000-0000-000000000002"
+    },
+    {
+      "id": "60000000-0000-0000-0000-000000000004",
+      "code": "0001",
+      "id_distrito": "50000000-0000-0000-0000-000000000003"
+    },
+    {
+      "id": "60000000-0000-0000-0000-000000000005",
+      "code": "0001",
+      "id_distrito": "50000000-0000-0000-0000-000000000004"
+    }
+  ],
+
+  "lugar_universal": [
+    {
+      "id": "70000000-0000-0000-0000-000000000001",
+      "name": "Cartagena de Indias",
+      "es_extranjero": false,
+      "id_municipio_colombia": "40000000-0000-0000-0000-000000000001",
+      "id_ciudad_extranjera": null
+    },
+    {
+      "id": "70000000-0000-0000-0000-000000000002",
+      "name": "Magangué",
+      "es_extranjero": false,
+      "id_municipio_colombia": "40000000-0000-0000-0000-000000000002",
+      "id_ciudad_extranjera": null
+    },
+    {
+      "id": "70000000-0000-0000-0000-000000000003",
+      "name": "Barranquilla",
+      "es_extranjero": false,
+      "id_municipio_colombia": "40000000-0000-0000-0000-000000000003",
+      "id_ciudad_extranjera": null
+    },
+    {
+      "id": "70000000-0000-0000-0000-000000000004",
+      "name": "Miami",
+      "es_extranjero": true,
+      "id_municipio_colombia": null,
+      "id_ciudad_extranjera": "20000000-0000-0000-0000-000000000001"
+    },
+    {
+      "id": "70000000-0000-0000-0000-000000000005",
+      "name": "Madrid",
+      "es_extranjero": true,
+      "id_municipio_colombia": null,
+      "id_ciudad_extranjera": "20000000-0000-0000-0000-000000000002"
+    }
+  ],
+
+  "hogar_derecho": [
+    {
+      "id": "80000000-0000-0000-0000-000000000001",
+      "street": "Carrera 10",
+      "number": "25-15",
+      "id_manzana": "60000000-0000-0000-0000-000000000001",
+      "latitude": 10.4236,
+      "longitude": -75.5270
+    },
+    {
+      "id": "80000000-0000-0000-0000-000000000002",
+      "street": "Calle 32",
+      "number": "8-45",
+      "id_manzana": "60000000-0000-0000-0000-000000000001",
+      "latitude": 10.4251,
+      "longitude": -75.5291
+    },
+    {
+      "id": "80000000-0000-0000-0000-000000000003",
+      "street": "Carrera 3",
+      "number": "15-20",
+      "id_manzana": "60000000-0000-0000-0000-000000000002",
+      "latitude": 10.4270,
+      "longitude": -75.5210
+    },
+    {
+      "id": "80000000-0000-0000-0000-000000000004",
+      "street": "Calle 45",
+      "number": "12-30",
+      "id_manzana": "60000000-0000-0000-0000-000000000003",
+      "latitude": 10.4400,
+      "longitude": -75.5150
+    },
+    {
+      "id": "80000000-0000-0000-0000-000000000005",
+      "street": "Carrera 20",
+      "number": "30-12",
+      "id_manzana": "60000000-0000-0000-0000-000000000004",
+      "latitude": 9.2970,
+      "longitude": -74.7730
+    }
+  ],
+
+  "hogar_hecho": [
+    {
+      "id": "81000000-0000-0000-0000-000000000001",
+      "street": "Carrera 10",
+      "number": "25-15",
+      "es_en_colombia": true,
+      "id_manzana": "60000000-0000-0000-0000-000000000001",
+      "id_ciudad_extranjera": null,
+      "latitude": 10.4236,
+      "longitude": -75.5270
+    },
+    {
+      "id": "81000000-0000-0000-0000-000000000002",
+      "street": "Calle 32",
+      "number": "8-45",
+      "es_en_colombia": true,
+      "id_manzana": "60000000-0000-0000-0000-000000000001",
+      "id_ciudad_extranjera": null,
+      "latitude": 10.4251,
+      "longitude": -75.5291
+    },
+    {
+      "id": "81000000-0000-0000-0000-000000000003",
+      "street": "Calle 8",
+      "number": "145",
+      "es_en_colombia": false,
+      "id_manzana": null,
+      "id_ciudad_extranjera": "20000000-0000-0000-0000-000000000001",
+      "latitude": 25.7617,
+      "longitude": -80.1918
+    },
+    {
+      "id": "81000000-0000-0000-0000-000000000004",
+      "street": "Calle de Alcalá",
+      "number": "120",
+      "es_en_colombia": false,
+      "id_manzana": null,
+      "id_ciudad_extranjera": "20000000-0000-0000-0000-000000000002",
+      "latitude": 40.4168,
+      "longitude": -3.7038
+    },
+    {
+      "id": "81000000-0000-0000-0000-000000000005",
+      "street": "Carrera 3",
+      "number": "15-20",
+      "es_en_colombia": true,
+      "id_manzana": "60000000-0000-0000-0000-000000000002",
+      "id_ciudad_extranjera": null,
+      "latitude": 10.4270,
+      "longitude": -75.5210
+    }
+  ],
+
+  "persona": [
+    {
+      "id": "90000000-0000-0000-0000-000000000001",
+      "first_name": "Carlos",
+      "second_name": "Andrés",
+      "last_name1": "Gómez",
+      "last_name2": "Rodríguez",
+      "date_of_birth": "1985-04-12",
+      "id_lugar_nacimiento": "70000000-0000-0000-0000-000000000001",
+      "height": 1.78,
+      "sex": "M",
+      "education_level": "universitario",
+      "military_situation": "primera_clase",
+      "dni": "1001001001",
+      "dni_status": "vigente",
+      "marital_status": "casado",
+      "occupation": "Ingeniero de sistemas",
+      "ethnic_group": "ninguno_de_los_anteriores"
+    },
+    {
+      "id": "90000000-0000-0000-0000-000000000002",
+      "first_name": "María",
+      "second_name": "Alejandra",
+      "last_name1": "Gómez",
+      "last_name2": "Rodríguez",
+      "date_of_birth": "1988-09-21",
+      "id_lugar_nacimiento": "70000000-0000-0000-0000-000000000001",
+      "height": 1.65,
+      "sex": "F",
+      "education_level": "universitario",
+      "military_situation": "no_aplica",
+      "dni": "1001001002",
+      "dni_status": "vigente",
+      "marital_status": "casado",
+      "occupation": "Médica",
+      "ethnic_group": "ninguno_de_los_anteriores"
+    },
+    {
+      "id": "90000000-0000-0000-0000-000000000003",
+      "first_name": "Juan",
+      "second_name": "David",
+      "last_name1": "Gómez",
+      "last_name2": "Rodríguez",
+      "date_of_birth": "2010-02-15",
+      "id_lugar_nacimiento": "70000000-0000-0000-0000-000000000001",
+      "height": 1.62,
+      "sex": "M",
+      "education_level": "basica_secundaria",
+      "military_situation": "no_aplica",
+      "dni": null,
+      "dni_status": "no_aplica",
+      "marital_status": "soltero",
+      "occupation": "Estudiante",
+      "ethnic_group": "ninguno_de_los_anteriores"
+    },
+    {
+      "id": "90000000-0000-0000-0000-000000000004",
+      "first_name": "Sofía",
+      "second_name": "Valentina",
+      "last_name1": "Gómez",
+      "last_name2": "Rodríguez",
+      "date_of_birth": "2004-06-08",
+      "id_lugar_nacimiento": "70000000-0000-0000-0000-000000000002",
+      "height": 1.68,
+      "sex": "F",
+      "education_level": "universitario",
+      "military_situation": "no_aplica",
+      "dni": "1001001004",
+      "dni_status": "vigente",
+      "marital_status": "soltero",
+      "occupation": "Estudiante",
+      "ethnic_group": "ninguno_de_los_anteriores"
+    },
+    {
+      "id": "90000000-0000-0000-0000-000000000005",
+      "first_name": "Luis",
+      "second_name": "Fernando",
+      "last_name1": "Martínez",
+      "last_name2": "Pérez",
+      "date_of_birth": "1975-11-03",
+      "id_lugar_nacimiento": "70000000-0000-0000-0000-000000000003",
+      "height": 1.72,
+      "sex": "M",
+      "education_level": "tecnico",
+      "military_situation": "segunda_clase",
+      "dni": "1001001005",
+      "dni_status": "vigente",
+      "marital_status": "divorciado",
+      "occupation": "Técnico electricista",
+      "ethnic_group": "negro_mulato_afrocolombiano"
+    },
+    {
+      "id": "90000000-0000-0000-0000-000000000006",
+      "first_name": "Ana",
+      "second_name": "Lucía",
+      "last_name1": "Martínez",
+      "last_name2": "Pérez",
+      "date_of_birth": "1978-01-27",
+      "id_lugar_nacimiento": "70000000-0000-0000-0000-000000000004",
+      "height": 1.60,
+      "sex": "F",
+      "education_level": "tecnico",
+      "military_situation": "no_aplica",
+      "dni": "1001001006",
+      "dni_status": "vigente",
+      "marital_status": "union_libre",
+      "occupation": "Comerciante",
+      "ethnic_group": "ninguno_de_los_anteriores"
+    },
+    {
+      "id": "90000000-0000-0000-0000-000000000007",
+      "first_name": "Diego",
+      "second_name": "Alejandro",
+      "last_name1": "Torres",
+      "last_name2": "Ramírez",
+      "date_of_birth": "1992-12-19",
+      "id_lugar_nacimiento": "70000000-0000-0000-0000-000000000005",
+      "height": 1.80,
+      "sex": "M",
+      "education_level": "maestria",
+      "military_situation": "exento",
+      "dni": "1001001007",
+      "dni_status": "vigente",
+      "marital_status": "soltero",
+      "occupation": "Investigador",
+      "ethnic_group": "ninguno_de_los_anteriores"
+    },
+    {
+      "id": "90000000-0000-0000-0000-000000000008",
+      "first_name": "Laura",
+      "second_name": "Isabel",
+      "last_name1": "Torres",
+      "last_name2": "Ramírez",
+      "date_of_birth": "1995-03-30",
+      "id_lugar_nacimiento": "70000000-0000-0000-0000-000000000001",
+      "height": 1.67,
+      "sex": "F",
+      "education_level": "especializacion",
+      "military_situation": "no_aplica",
+      "dni": "1001001008",
+      "dni_status": "vigente",
+      "marital_status": "soltero",
+      "occupation": "Arquitecta",
+      "ethnic_group": "ninguno_de_los_anteriores"
+    }
+  ],
+
+  "registro_derecho": [
+    {
+      "id": "a0000000-0000-0000-0000-000000000001",
+      "id_persona": "90000000-0000-0000-0000-000000000001",
+      "id_hogar_derecho": "80000000-0000-0000-0000-000000000001",
+      "registration_date": "2018-05-10",
+      "is_active": true
+    },
+    {
+      "id": "a0000000-0000-0000-0000-000000000002",
+      "id_persona": "90000000-0000-0000-0000-000000000002",
+      "id_hogar_derecho": "80000000-0000-0000-0000-000000000001",
+      "registration_date": "2018-05-10",
+      "is_active": true
+    },
+    {
+      "id": "a0000000-0000-0000-0000-000000000003",
+      "id_persona": "90000000-0000-0000-0000-000000000003",
+      "id_hogar_derecho": "80000000-0000-0000-0000-000000000001",
+      "registration_date": "2018-05-10",
+      "is_active": true
+    },
+    {
+      "id": "a0000000-0000-0000-0000-000000000004",
+      "id_persona": "90000000-0000-0000-0000-000000000004",
+      "id_hogar_derecho": "80000000-0000-0000-0000-000000000003",
+      "registration_date": "2020-01-15",
+      "is_active": true
+    },
+    {
+      "id": "a0000000-0000-0000-0000-000000000005",
+      "id_persona": "90000000-0000-0000-0000-000000000005",
+      "id_hogar_derecho": "80000000-0000-0000-0000-000000000004",
+      "registration_date": "2015-07-20",
+      "is_active": true
+    },
+    {
+      "id": "a0000000-0000-0000-0000-000000000006",
+      "id_persona": "90000000-0000-0000-0000-000000000006",
+      "id_hogar_derecho": "80000000-0000-0000-0000-000000000004",
+      "registration_date": "2015-07-20",
+      "is_active": true
+    },
+    {
+      "id": "a0000000-0000-0000-0000-000000000007",
+      "id_persona": "90000000-0000-0000-0000-000000000007",
+      "id_hogar_derecho": "80000000-0000-0000-0000-000000000005",
+      "registration_date": "2021-03-12",
+      "is_active": true
+    },
+    {
+      "id": "a0000000-0000-0000-0000-000000000008",
+      "id_persona": "90000000-0000-0000-0000-000000000008",
+      "id_hogar_derecho": "80000000-0000-0000-0000-000000000005",
+      "registration_date": "2021-03-12",
+      "is_active": true
+    }
+  ],
+
+  "registro_hecho": [
+    {
+      "id": "b0000000-0000-0000-0000-000000000001",
+      "id_persona": "90000000-0000-0000-0000-000000000001",
+      "id_hogar_hecho": "81000000-0000-0000-0000-000000000001",
+      "start_date": "2018-05-10",
+      "end_date": null
+    },
+    {
+      "id": "b0000000-0000-0000-0000-000000000002",
+      "id_persona": "90000000-0000-0000-0000-000000000002",
+      "id_hogar_hecho": "81000000-0000-0000-0000-000000000001",
+      "start_date": "2018-05-10",
+      "end_date": null
+    },
+    {
+      "id": "b0000000-0000-0000-0000-000000000003",
+      "id_persona": "90000000-0000-0000-0000-000000000003",
+      "id_hogar_hecho": "81000000-0000-0000-0000-000000000001",
+      "start_date": "2018-05-10",
+      "end_date": null
+    },
+    {
+      "id": "b0000000-0000-0000-0000-000000000004",
+      "id_persona": "90000000-0000-0000-0000-000000000004",
+      "id_hogar_hecho": "81000000-0000-0000-0000-000000000005",
+      "start_date": "2020-01-15",
+      "end_date": null
+    },
+    {
+      "id": "b0000000-0000-0000-0000-000000000005",
+      "id_persona": "90000000-0000-0000-0000-000000000005",
+      "id_hogar_hecho": "81000000-0000-0000-0000-000000000002",
+      "start_date": "2015-07-20",
+      "end_date": "2022-06-30"
+    },
+    {
+      "id": "b0000000-0000-0000-0000-000000000006",
+      "id_persona": "90000000-0000-0000-0000-000000000005",
+      "id_hogar_hecho": "81000000-0000-0000-0000-000000000003",
+      "start_date": "2022-07-01",
+      "end_date": null
+    },
+    {
+      "id": "b0000000-0000-0000-0000-000000000007",
+      "id_persona": "90000000-0000-0000-0000-000000000006",
+      "id_hogar_hecho": "81000000-0000-0000-0000-000000000002",
+      "start_date": "2015-07-20",
+      "end_date": null
+    },
+    {
+      "id": "b0000000-0000-0000-0000-000000000008",
+      "id_persona": "90000000-0000-0000-0000-000000000007",
+      "id_hogar_hecho": "81000000-0000-0000-0000-000000000004",
+      "start_date": "2021-03-12",
+      "end_date": null
+    },
+    {
+      "id": "b0000000-0000-0000-0000-000000000009",
+      "id_persona": "90000000-0000-0000-0000-000000000008",
+      "id_hogar_hecho": "81000000-0000-0000-0000-000000000005",
+      "start_date": "2021-03-12",
+      "end_date": null
+    }
+  ],
+
+  "historial_estado_civil": [
+    {
+      "id": "c0000000-0000-0000-0000-000000000001",
+      "id_persona": "90000000-0000-0000-0000-000000000001",
+      "previous_status": "soltero",
+      "new_status": "casado",
+      "change_date": "2012-08-18"
+    },
+    {
+      "id": "c0000000-0000-0000-0000-000000000002",
+      "id_persona": "90000000-0000-0000-0000-000000000002",
+      "previous_status": "soltero",
+      "new_status": "casado",
+      "change_date": "2012-08-18"
+    },
+    {
+      "id": "c0000000-0000-0000-0000-000000000003",
+      "id_persona": "90000000-0000-0000-0000-000000000005",
+      "previous_status": "casado",
+      "new_status": "divorciado",
+      "change_date": "2014-11-10"
+    },
+    {
+      "id": "c0000000-0000-0000-0000-000000000004",
+      "id_persona": "90000000-0000-0000-0000-000000000006",
+      "previous_status": "soltero",
+      "new_status": "union_libre",
+      "change_date": "2005-04-22"
+    }
+  ],
+
+  "relacion_familiar": [
+    {
+      "id": "d0000000-0000-0000-0000-000000000001",
+      "id_persona_a": "90000000-0000-0000-0000-000000000001",
+      "id_persona_b": "90000000-0000-0000-0000-000000000002",
+      "relationship_type": "conyuge"
+    },
+    {
+      "id": "d0000000-0000-0000-0000-000000000002",
+      "id_persona_a": "90000000-0000-0000-0000-000000000001",
+      "id_persona_b": "90000000-0000-0000-0000-000000000003",
+      "relationship_type": "padre"
+    },
+    {
+      "id": "d0000000-0000-0000-0000-000000000003",
+      "id_persona_a": "90000000-0000-0000-0000-000000000002",
+      "id_persona_b": "90000000-0000-0000-0000-000000000003",
+      "relationship_type": "madre"
+    },
+    {
+      "id": "d0000000-0000-0000-0000-000000000004",
+      "id_persona_a": "90000000-0000-0000-0000-000000000005",
+      "id_persona_b": "90000000-0000-0000-0000-000000000006",
+      "relationship_type": "conyuge"
+    },
+    {
+      "id": "d0000000-0000-0000-0000-000000000005",
+      "id_persona_a": "90000000-0000-0000-0000-000000000007",
+      "id_persona_b": "90000000-0000-0000-0000-000000000008",
+      "relationship_type": "hermano"
+    }
+  ],
+
+  "rol": [
+    {
+      "id": "e0000000-0000-0000-0000-000000000001",
+      "name": "user",
+      "description": "Usuario con acceso operativo al sistema."
+    },
+    {
+      "id": "e0000000-0000-0000-0000-000000000002",
+      "name": "admin",
+      "description": "Administrador del sistema."
+    }
+  ],
+
+  "usuario": [
+    {
+      "id": "f0000000-0000-0000-0000-000000000001",
+      "username": "censo_user",
+      "password_hash": "$2b$12$exampleHashForSeedDataOnly",
+      "id_rol": "e0000000-0000-0000-0000-000000000001",
+      "active": true
+    },
+    {
+      "id": "f0000000-0000-0000-0000-000000000002",
+      "username": "censo_admin",
+      "password_hash": "$2b$12$exampleAdminHashForSeedDataOnly",
+      "id_rol": "e0000000-0000-0000-0000-000000000002",
+      "active": true
+    }
+  ],
+
+  "verificacion_identidad": [
+    {
+      "id": "11000000-0000-0000-0000-000000000001",
+      "id_persona": "90000000-0000-0000-0000-000000000001",
+      "method": "document",
+      "verified_at": "2024-01-15T10:30:00",
+      "id_usuario": "f0000000-0000-0000-0000-000000000002",
+      "status": "verified"
+    },
+    {
+      "id": "11000000-0000-0000-0000-000000000002",
+      "id_persona": "90000000-0000-0000-0000-000000000002",
+      "method": "biometric",
+      "verified_at": "2024-01-15T10:35:00",
+      "id_usuario": "f0000000-0000-0000-0000-000000000002",
+      "status": "verified"
+    },
+    {
+      "id": "11000000-0000-0000-0000-000000000003",
+      "id_persona": "90000000-0000-0000-0000-000000000005",
+      "method": "manual",
+      "verified_at": "2024-02-20T09:15:00",
+      "id_usuario": "f0000000-0000-0000-0000-000000000001",
+      "status": "verified"
+    },
+    {
+      "id": "11000000-0000-0000-0000-000000000004",
+      "id_persona": "90000000-0000-0000-0000-000000000007",
+      "method": "document",
+      "verified_at": "2024-03-10T14:20:00",
+      "id_usuario": "f0000000-0000-0000-0000-000000000001",
+      "status": "pending"
+    }
+  ]
+}

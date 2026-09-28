@@ -1,0 +1,1 @@
+ALTER TABLE "distrito" ADD FOREIGN KEY ("id_municipio") REFERENCES "municipio" ("id") DEFERRABLE INITIALLY IMMEDIATE;

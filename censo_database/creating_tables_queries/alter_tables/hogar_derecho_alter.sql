@@ -1,0 +1,1 @@
+ALTER TABLE "hogar_derecho" ADD FOREIGN KEY ("id_manzana") REFERENCES "manzana" ("id") DEFERRABLE INITIALLY IMMEDIATE;

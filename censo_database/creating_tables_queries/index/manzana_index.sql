@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX ON "manzana" ("code", "id_distrito");

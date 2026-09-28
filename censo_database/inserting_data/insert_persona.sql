@@ -1,0 +1,55 @@
+INSERT INTO persona (
+    id,
+    first_name,
+    second_name,
+    last_name1,
+    last_name2,
+    date_of_birth,
+    id_lugar_nacimiento,
+    height,
+    sex,
+    education_level,
+    military_situation,
+    dni,
+    dni_status,
+    marital_status,
+    occupation,
+    ethnic_group
+)
+SELECT
+    id,
+    first_name,
+    second_name,
+    last_name1,
+    last_name2,
+    date_of_birth,
+    id_lugar_nacimiento,
+    height,
+    sex,
+    education_level,
+    military_situation,
+    dni,
+    dni_status,
+    marital_status,
+    occupation,
+    ethnic_group
+FROM jsonb_to_recordset(
+    (:your_json_data)::jsonb -> 'persona'
+) AS x(
+    id UUID,
+    first_name VARCHAR(50),
+    second_name VARCHAR(50),
+    last_name1 VARCHAR(50),
+    last_name2 VARCHAR(50),
+    date_of_birth DATE,
+    id_lugar_nacimiento UUID,
+    height NUMERIC,
+    sex sex_enum,
+    education_level education_level_enum,
+    military_situation military_situation_enum,
+    dni VARCHAR,
+    dni_status dni_status_enum,
+    marital_status marital_status_enum,
+    occupation VARCHAR,
+    ethnic_group ethnic_group_enum
+);

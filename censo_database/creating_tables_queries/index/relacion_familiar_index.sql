@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX ON "relacion_familiar" ("id_persona_a", "id_persona_b", "relationship_type");

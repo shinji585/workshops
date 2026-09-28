@@ -1,0 +1,1 @@
+ALTER TABLE "ciudad_extranjera" ADD FOREIGN KEY ("id_pais") REFERENCES "pais" ("id") DEFERRABLE INITIALLY IMMEDIATE;

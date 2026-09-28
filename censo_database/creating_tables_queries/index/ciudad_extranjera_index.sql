@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX ON "ciudad_extranjera" ("name", "id_pais");
