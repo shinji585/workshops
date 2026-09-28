@@ -12,7 +12,7 @@ SELECT
     id_rol,
     active
 FROM jsonb_to_recordset(
-    (:your_json_data)::jsonb -> 'usuario'
+    :'json_data'::jsonb -> 'usuario'
 ) AS x(
     id UUID,
     username VARCHAR(50),

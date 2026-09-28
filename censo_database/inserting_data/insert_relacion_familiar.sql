@@ -10,7 +10,7 @@ SELECT
     id_persona_b,
     relationship_type
 FROM jsonb_to_recordset(
-    (:your_json_data)::jsonb -> 'relacion_familiar'
+    :'json_data'::jsonb -> 'relacion_familiar'
 ) AS x(
     id UUID,
     id_persona_a UUID,

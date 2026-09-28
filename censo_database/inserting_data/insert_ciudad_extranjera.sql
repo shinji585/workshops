@@ -10,7 +10,7 @@ SELECT
     state_province,
     id_pais
 FROM jsonb_to_recordset(
-    (:your_json_data)::jsonb -> 'ciudad_extranjera'
+    :'json_data'::jsonb -> 'ciudad_extranjera'
 ) AS x(
     id UUID,
     name VARCHAR(100),

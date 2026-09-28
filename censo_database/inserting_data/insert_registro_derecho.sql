@@ -12,7 +12,7 @@ SELECT
     registration_date,
     is_active
 FROM jsonb_to_recordset(
-    (:your_json_data)::jsonb -> 'registro_derecho'
+    :'json_data'::jsonb -> 'registro_derecho'
 ) AS x(
     id UUID,
     id_persona UUID,

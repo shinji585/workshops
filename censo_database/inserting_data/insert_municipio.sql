@@ -10,7 +10,7 @@ SELECT
     code,
     id_departamento
 FROM jsonb_to_recordset(
-    (:your_json_data)::jsonb -> 'municipio'
+    :'json_data'::jsonb -> 'municipio'
 ) AS x(
     id UUID,
     name VARCHAR(100),

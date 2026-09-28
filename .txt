@@ -1,0 +1,17 @@
+1.  pais
+2.  ciudad_extranjera
+3.  departamento
+4.  municipio
+5.  distrito
+6.  manzana
+7.  lugar_universal
+8.  hogar_derecho
+9.  hogar_hecho
+10. rol
+11. persona
+12. registro_derecho
+13. registro_hecho
+14. historial_estado_civil
+15. relacion_familiar
+16. usuario
+17. verificacion_identidad

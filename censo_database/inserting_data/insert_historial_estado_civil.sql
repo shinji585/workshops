@@ -12,7 +12,7 @@ SELECT
     new_status,
     change_date
 FROM jsonb_to_recordset(
-    (:your_json_data)::jsonb -> 'historial_estado_civil'
+    :'json_data'::jsonb -> 'historial_estado_civil'
 ) AS x(
     id UUID,
     id_persona UUID,

@@ -14,7 +14,7 @@ SELECT
     id_usuario,
     status
 FROM jsonb_to_recordset(
-    (:your_json_data)::jsonb -> 'verificacion_identidad'
+    :'json_data'::jsonb -> 'verificacion_identidad'
 ) AS x(
     id UUID,
     id_persona UUID,

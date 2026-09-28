@@ -14,7 +14,7 @@ SELECT
     latitude,
     longitude
 FROM jsonb_to_recordset(
-    (:your_json_data)::jsonb -> 'hogar_derecho'
+    :'json_data'::jsonb -> 'hogar_derecho'
 ) AS x(
     id UUID,
     street VARCHAR,

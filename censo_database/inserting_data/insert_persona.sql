@@ -34,7 +34,7 @@ SELECT
     occupation,
     ethnic_group
 FROM jsonb_to_recordset(
-    (:your_json_data)::jsonb -> 'persona'
+    :'json_data'::jsonb -> 'persona'
 ) AS x(
     id UUID,
     first_name VARCHAR(50),

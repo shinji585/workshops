@@ -12,7 +12,7 @@ SELECT
     id_municipio_colombia,
     id_ciudad_extranjera
 FROM jsonb_to_recordset(
-    (:your_json_data)::jsonb -> 'lugar_universal'
+    :'json_data'::jsonb -> 'lugar_universal'
 ) AS x(
     id UUID,
     name VARCHAR(150),
