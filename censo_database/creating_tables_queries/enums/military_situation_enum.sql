@@ -6,3 +6,5 @@ CREATE TYPE "military_situation_enum" AS ENUM (
   'en_tramite',
   'exento'
 );
+
+ALTER TYPE military_situation_enum ADD VALUE 'activa';
