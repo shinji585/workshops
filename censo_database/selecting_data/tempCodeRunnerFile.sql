@@ -1,9 +1,11 @@
-SELECT ROUND(
-        AVG(
-            EXTRACT(
-                YEAR
-                FROM AGE(date_of_birth)
-            )
-        )
-    ) AS average_age
-FROM persona;
+SELECT CONCAT_WS(
+        ' ',
+        p.first_name,
+        p.second_name,
+        p.last_name1,
+        p.last_name2
+    ) AS full_name,
+    p.height,
+    get_age(p.date_of_birth) AS age
+FROM person
+WHERE age > 50;
