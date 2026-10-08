@@ -1,0 +1,2 @@
+\copy course (code, name, number_credits, description) FROM '/home/toji/projects/workshops/practice_database_exam/csv_data/course.csv' WITH (FORMAT csv, HEADER true);
+\copy student (name, email, date_of_birth) FROM '/home/toji/projects/workshops/practice_database_exam/csv_data/student.csv' WITH (FORMAT csv, HEADER true);

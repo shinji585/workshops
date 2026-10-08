@@ -1,0 +1,20 @@
+ALTER TABLE course
+ADD code CHAR(4) NOT NULL;
+
+
+
+ALTER TABLE course
+ALTER COLUMN name
+SET NOT NULL,
+    ALTER COLUMN number_credits
+SET NOT NULL,
+    ALTER COLUMN description
+SET NOT NULL;
+
+
+
+ALTER TABLE student
+ALTER COLUMN name SET NOT NULL,
+ALTER COLUMN email SET NOT NULL,
+ADD CONSTRAINT uni_email UNIQUE (email),
+ALTER COLUMN date_of_birth SET NOT NULL;

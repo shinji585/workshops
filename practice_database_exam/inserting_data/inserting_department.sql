@@ -1,0 +1,1 @@
+\copy department (name,course_id) FROM '/home/toji/projects/workshops/practice_database_exam/csv_data/department.csv' WITH (FORMAT csv, HEADER true);

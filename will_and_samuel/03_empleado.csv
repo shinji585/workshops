@@ -1,0 +1,4 @@
+id,id_personal_data,cargo,estado,salario
+1,5,Administrador,Activo,3500.0
+2,6,Cajero,Activo,1200.0
+3,7,Atencion_Cliente,Activo,1300.0

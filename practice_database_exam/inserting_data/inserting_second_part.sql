@@ -1,0 +1,1 @@
+\copy enrollment (student_id, course_id) FROM '/home/toji/projects/workshops/practice_database_exam/csv_data/enrollment.csv' WITH (FORMAT csv, HEADER true);

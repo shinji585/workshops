@@ -6,8 +6,8 @@
             "server": "localhost",
             "port": 5432,
             "driver": "PostgreSQL",
-            "name": "censo_poblacional",
-            "database": "censo_poblacional",
+            "name": "next_exam_practice",
+            "database": "next_exam_practice",
             "username": "goku",
             "password": "123456"
         }
